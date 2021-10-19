@@ -1,5 +1,7 @@
 # Terraform: Mentoring Account
 
+[![terraform_validate][Build Status]][Build] [![semantic-release Badge][semantic-release Badge]][semantic-release]
+
 ## Overview
 
 This repository manintains configuration / setup for the terraform for the mentoring account.
