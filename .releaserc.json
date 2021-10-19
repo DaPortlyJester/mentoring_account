@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer"
+  ],
+  "repositoryUrl": "git@github.com:DaPortlyJester/mentoring_account.git"
+}
