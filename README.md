@@ -10,10 +10,9 @@ Maintains S3 Buckets and DynamoDB lock tables for terraform remote state in mana
 
 ### AWS OIDC Federation
 
-Maintains AWS OIDC Federation for Github Actions across Repos / Accounts
+Maintains AWS OIDC Federation for Github Actions in this account.
 
-* This repository must stay private
-* This repository will control access for other repositories to AWS
+* Github OIDC provider
 * Credentials MUST never be added to this repository.
 
 ## Reference Information
@@ -37,7 +36,7 @@ Maintains AWS OIDC Federation for Github Actions across Repos / Accounts
 <https://registry.terraform.io/providers/hashicorp/aws/latest/docs>
 <https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/organizations_organization>
 
-[Build]: https://github.com/DaPortlyJester/aws_personal_organization/actions/workflows/terraform_validate.yml
-[Build status]: https://github.com/DaPortlyJester/aws_personal_organization/actions/workflows/terraform_validate.yml/badge.svg
+[Build]: https://github.com/DaPortlyJester/mentoring_account/actions/workflows/terraform_validate.yml
+[Build status]: https://github.com/DaPortlyJester/mentoring_account/actions/workflows/terraform_validate.yml/badge.svg
 [semantic-release Badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release]: https://github.com/semantic-release/semantic-release
