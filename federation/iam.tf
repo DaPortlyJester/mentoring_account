@@ -13,7 +13,7 @@ resource "aws_iam_openid_connect_provider" "github_oidc" {
 
   thumbprint_list = ["6938FD4D98BAB03FAADB97B34396831E3780AEA1"]
 
-  tags = merge(local.tags, {
+  tags   = merge(local.tags, {
     Name = "daportlyjester-github-actions-oidc-provider"
   })
 
@@ -30,7 +30,7 @@ data "aws_iam_policy_document" "github_oidc" {
     effect  = "Allow"
 
     principals {
-      type = "Federated"
+      type        = "Federated"
       identifiers = [
         aws_iam_openid_connect_provider.github_oidc.arn
       ]
@@ -70,7 +70,7 @@ resource "aws_iam_role_policy_attachment" "github_oidc_ro" {
 
 # Enable for admin access
 resource "aws_iam_role_policy_attachment" "github_oidc_admin" {
-  role = aws_iam_role.github_oidc.name
+  role       = aws_iam_role.github_oidc.name
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
