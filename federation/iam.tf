@@ -13,7 +13,7 @@ resource "aws_iam_openid_connect_provider" "github_oidc" {
 
   thumbprint_list = ["6938FD4D98BAB03FAADB97B34396831E3780AEA1"]
 
-  tags   = merge(local.tags, {
+  tags = merge(local.tags, {
     Name = "daportlyjester-github-actions-oidc-provider"
   })
 
@@ -30,7 +30,7 @@ data "aws_iam_policy_document" "github_oidc" {
     effect  = "Allow"
 
     principals {
-      type        = "Federated"
+      type = "Federated"
       identifiers = [
         aws_iam_openid_connect_provider.github_oidc.arn
       ]
